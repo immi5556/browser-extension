@@ -1,0 +1,17 @@
+{
+  "name": "Ark Form Auto Fill Extensions",
+  "description": "Trial by raj@immanuel.co",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "form.html",
+    "default_icon": "ark-autofill.png"
+  },
+  "permissions": [ "storage" ],
+  "content_scripts": [
+    {
+      "matches": [ "https://developer.chrome.com/docs/extensions/reference/*" ],
+      "js": [ "content.js" ]
+    }
+  ]
+}
